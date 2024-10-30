@@ -35,12 +35,16 @@ int main(void) {
         count += 1;
     }
 
+
+    float sum1 = 0.0, sum2 = 0.0;
     for(int i = 0; i < count; i++){
-        printf("%.10f   ", arr1[i]);
+        sum1 += fabs(arr1[i]);
     }
 
-    printf("\n\n\n\n");
     for(int i = 0; i < count; i++){
-        printf("%.10f   ", arr2[i]);
+        sum2 += fabs(arr2[i]);
     }
+
+    printf("Accuracy of arctan1 wrt arctan2 = %.10f%%\n", 100 - 100 * (fabs(sum2 - sum1) / (sum2)));
+    printf("Accuracy of arctan2 wrt arctan1 = %.10f%%\n", 100 - 100 * (fabs(sum1 - sum2) / (sum1)));
 }
