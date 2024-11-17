@@ -1,0 +1,2 @@
+tanx.c:
+This program calculates the area under the curve. The for loop runs from 0 to 12 getting degree angles from 0 to 60 degrees. These values are then passed to a function deg_to_rad() to convert degrees to radians. Basically this goes from 0 to pi/3. The tan values for these angles are caluclated and stored in a global array. This is then manipulated to caluclate the area under the curve by using the trapezoidal rule inside area_under_curve() function. And the final output is displayed.

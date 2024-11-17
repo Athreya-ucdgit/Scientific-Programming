@@ -2,6 +2,7 @@
 #include<math.h>
 #include<stdlib.h>
 
+//Arctan calculation method 1
 float artanh1(float x,float delta){
     int i = 0;
     float element = 0.0;
@@ -17,14 +18,16 @@ float artanh1(float x,float delta){
     return 0.0;
 }
 
+//Arctan calculation method 2
 float artanh2(float x){
     return 0.5 * (log(1+x) - log(1-x));
 }
 
+
 int main(void) {
     float delta = 0.0;
     printf("Enter a real positive number delta:");
-    scanf("%f",&delta);
+    scanf("%f",&delta); // delta
 
     float arr1[181], arr2[181];
 
@@ -35,16 +38,18 @@ int main(void) {
         count += 1;
     }
 
-
+    //calculating the sum of values for method 1
     float sum1 = 0.0, sum2 = 0.0;
     for(int i = 0; i < count; i++){
         sum1 += fabs(arr1[i]);
     }
 
+    //calculating the sum of values for method 2
     for(int i = 0; i < count; i++){
         sum2 += fabs(arr2[i]);
     }
 
+    //Printing accuracy w.r.t to each method.
     printf("Accuracy of arctan1 wrt arctan2 = %.10f%%\n", 100 - 100 * (fabs(sum2 - sum1) / (sum2)));
     printf("Accuracy of arctan2 wrt arctan1 = %.10f%%\n", 100 - 100 * (fabs(sum1 - sum2) / (sum1)));
 }

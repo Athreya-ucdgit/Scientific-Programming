@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include<math.h>
 
-float arr[13];
+float arr[13]; // global array
 
+// function to convert degree to radians.
 float deg_to_rad(int x){
     return x * (M_PI / 180);
 }
 
+// To calculate area under the curve using the tan values array.
 float area_under_curve(){
     float sum = arr[0] + arr[12];
     for(int i=1;i<12;i++){
@@ -17,11 +19,12 @@ float area_under_curve(){
     return sum;
 }
 
+
 int main(void) {
     for(int i = 0; i <= 12; i++){
-        int deg_angle = i * 5;
+        int deg_angle = i * 5; // degree values
         float rad_angle = deg_to_rad(deg_angle);
-        arr[i] = tan(rad_angle);
+        arr[i] = tan(rad_angle); // tan values array
     }
 
     float s = 0.0;
