@@ -1,11 +1,12 @@
-# How to compile:
-### Conversion.c
-gcc Conversion.c -o Conversion
-### Sum.c
-gcc Sum.c -o Sum
-
-# How to run:
-### Conversion.c
+# "Conversion.c"
+### How to compile:
+Command : gcc Conversion.c -o Conversion -lm
+### How to run:
 ./Conversion
-### Sum.c
+
+
+# "Sum.c:"
+### How to compile:
+gcc Sum.c -o Sum
+### How to run:
 ./Sum
