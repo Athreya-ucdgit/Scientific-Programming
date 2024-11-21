@@ -8,4 +8,4 @@ matmult.o: matmult.c
 	gcc -c matmult.c
 
 clean:
-	rm *.o matmult
+	rm *.o

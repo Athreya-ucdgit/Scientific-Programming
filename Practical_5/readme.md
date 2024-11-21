@@ -1,5 +1,14 @@
-arctan.c:
-This program caluclates arctans in two different methods for x values from -0.9 to 0.9 with a 0.01 increase in steps. The accuracy is displayed at the end.
+# Arctan
+Caluclates arctan in two different methods.
+### How to compile:
+Command : gcc arctan.c -o arctan -lm
+### How to run:
+Command : ./arctan
 
-fibonacci.c:
-This program calculates the nth number of the fibonacci series 0,1,1,2,3,5,8...and so on. This is achieved by using a revursive function to calculate the fibonacci number.
+
+# Fibonacci
+Calculates the nth number of the fibonacci series
+### How to compile:
+Command : gcc fibonacci.c -o fibonacci
+### How to run:
+Command : ./fibonacci
