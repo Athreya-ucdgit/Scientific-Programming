@@ -1,1 +1,0 @@
-This program prints hello world
