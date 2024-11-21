@@ -26,7 +26,7 @@ int main(void){
     int gcd_1 = gcd_iterative(a,b);
     int gcd_2 = gcd_recursive(a,b);
 
-    printf("Iterative:%d\n", gcd_1);
-    printf("Recursive:%d\n", gcd_2);
+    printf("Iterative GCD:%d\n", gcd_1);
+    printf("Recursive GCD:%d\n", gcd_2);
 }
 
